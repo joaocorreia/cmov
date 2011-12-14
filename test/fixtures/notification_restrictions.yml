@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user: 
+  minimumPrice: 1.5
+  maximumPrice: 1.5
+
+two:
+  user: 
+  minimumPrice: 1.5
+  maximumPrice: 1.5

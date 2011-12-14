@@ -1,0 +1,29 @@
+<%= form_for(@notification_restriction) do |f| %>
+  <% if @notification_restriction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@notification_restriction.errors.count, "error") %> prohibited this notification_restriction from being saved:</h2>
+
+      <ul>
+      <% @notification_restriction.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="field">
+    <%= f.label :minimumPrice %><br />
+    <%= f.text_field :minimumPrice %>
+  </div>
+  <div class="field">
+    <%= f.label :maximumPrice %><br />
+    <%= f.text_field :maximumPrice %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

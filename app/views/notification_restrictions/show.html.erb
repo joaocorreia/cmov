@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @notification_restriction.user %>
+</p>
+
+<p>
+  <b>Minimumprice:</b>
+  <%= @notification_restriction.minimumPrice %>
+</p>
+
+<p>
+  <b>Maximumprice:</b>
+  <%= @notification_restriction.maximumPrice %>
+</p>
+
+
+<%= link_to 'Edit', edit_notification_restriction_path(@notification_restriction) %> |
+<%= link_to 'Back', notification_restrictions_path %>

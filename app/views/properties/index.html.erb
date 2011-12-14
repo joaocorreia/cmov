@@ -1,0 +1,33 @@
+<h1>Listing properties</h1>
+
+<table>
+  <tr>
+    <th>Price</th>
+    <th>Address</th>
+    <th>Type</th>
+    <th>City</th>
+    <th>Country</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @properties.each do |property| %>
+  <tr>
+    <td><%= property.price %></td>
+    <td><%= property.address %></td>
+    <td><%= property.property_type %></td>
+    <td><%= property.city %></td>
+    <td><%= property.country %></td>
+    <td><%= property.description %></td>
+    <td><%= link_to 'Show', property %></td>
+    <td><%= link_to 'Edit', edit_property_path(property) %></td>
+    <td><%= link_to 'Destroy', property, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Property', new_property_path %>

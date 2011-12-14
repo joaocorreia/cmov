@@ -1,0 +1,27 @@
+<h1>Listing notification_restrictions</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Minimumprice</th>
+    <th>Maximumprice</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @notification_restrictions.each do |notification_restriction| %>
+  <tr>
+    <td><%= notification_restriction.user %></td>
+    <td><%= notification_restriction.minimumPrice %></td>
+    <td><%= notification_restriction.maximumPrice %></td>
+    <td><%= link_to 'Show', notification_restriction %></td>
+    <td><%= link_to 'Edit', edit_notification_restriction_path(notification_restriction) %></td>
+    <td><%= link_to 'Destroy', notification_restriction, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Notification restriction', new_notification_restriction_path %>

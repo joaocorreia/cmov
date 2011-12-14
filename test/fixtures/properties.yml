@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  price: 1.5
+  address: MyString
+  type: 
+  city: MyString
+  country: MyString
+  description: MyText
+
+two:
+  price: 1.5
+  address: MyString
+  type: 
+  city: MyString
+  country: MyString
+  description: MyText
